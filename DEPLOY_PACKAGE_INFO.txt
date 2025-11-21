@@ -1,0 +1,46 @@
+솔라코어 배포 패키지 정보
+========================================
+
+배포 날짜: 2024년 11월 21일
+
+✅ 배포할 파일 목록:
+----------------------------------------
+1. index.html (메인 페이지)
+2. css/style.css (스타일시트)
+3. js/main.js (JavaScript)
+4. images/ (이미지 폴더, 있다면)
+
+❌ 배포하지 말 것:
+----------------------------------------
+- index-old.html
+- README.md
+- GOOGLE_SHEETS_SETUP.md
+- PHOTO_UPLOAD_SETUP.md
+- apps-script-with-drive.js
+- DEPLOYMENT_GUIDE.md
+- 기타 .md 파일들
+
+📁 폴더 구조:
+----------------------------------------
+solacore-landing/
+├── index.html
+├── css/
+│   └── style.css
+└── js/
+    └── main.js
+
+🔧 설정 확인:
+----------------------------------------
+✅ Google Script URL: 설정됨
+✅ 이메일: alstj36382@gmail.com
+✅ 전화 기능: 제거됨 (대표번호 생성 전)
+⏳ Drive 폴더 ID: 나중에 설정 (선택사항)
+
+🌐 배포 플랫폼: Netlify
+----------------------------------------
+URL: https://netlify.com
+계정: 새로 만들기 (무료)
+방법: Drag & Drop
+
+========================================
+준비 완료! 배포 시작하세요! 🚀
