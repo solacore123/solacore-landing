@@ -1,23 +1,4 @@
 /* ===================================
-   모바일 가로 스크롤 방지
-   =================================== */
-html, body {
-    overflow-x: hidden;
-    width: 100%;
-    max-width: 100vw;
-}
-
-* {
-    max-width: 100%;
-}
-
-.container {
-    overflow-x: hidden;
-}
-
-/* ===================================
-
-/* ===================================
    Solar Core - Landing Page Styles
    Brand Colors: Navy Blue + Light Blue + White
    =================================== */
@@ -73,6 +54,8 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    max-width: 100vw;
 }
 
 img {
@@ -105,10 +88,14 @@ ul {
     max-width: var(--container-width);
     margin: 0 auto;
     padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 section {
     padding: var(--section-padding) 0;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 /* ===================================
@@ -1822,32 +1809,65 @@ cite {
     .brand-content {
         grid-template-columns: 1fr;
         gap: 2.5rem;
+        max-width: 100%;
     }
     
     .brand-showcase {
         padding: 2.5rem 1.75rem;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .brand-text {
+        max-width: 100%;
+        width: 100%;
     }
     
     .brand-text h3 {
         font-size: 2rem;
         line-height: 1.3;
         font-weight: 900;
+        text-align: center;
     }
     
     .brand-text p {
         font-size: 1.0625rem;
         line-height: 1.8;
         font-weight: 600;
+        text-align: center;
+    }
+    
+    .brand-logo-large {
+        max-width: 100%;
+        width: 100%;
+        padding: 2rem;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .brand-full-logo {
         max-width: 240px;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .brand-features {
+        max-width: 100%;
+        width: 100%;
     }
     
     .brand-features span {
         font-size: 1rem;
         padding: 0.875rem 1.25rem;
         font-weight: 700;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
     }
     
     .stats-banner {
@@ -1930,14 +1950,42 @@ cite {
         line-height: 1.7;
     }
     
+    .contact {
+        overflow-x: hidden;
+    }
+    
+    .contact-wrapper {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .contact-info {
+        max-width: 100%;
+        width: 100%;
+    }
+    
     .contact-form-wrapper {
         padding: 2rem 1.5rem;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .contact-form {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .form-group {
+        max-width: 100%;
+        width: 100%;
     }
     
     .form-group label {
         font-size: 1rem;
         font-weight: 700;
         margin-bottom: 0.625rem;
+        max-width: 100%;
     }
     
     .form-group input,
@@ -1945,6 +1993,21 @@ cite {
     .form-group textarea {
         font-size: 1rem;
         padding: 14px 16px;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .contact-direct {
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .email-contact {
+        max-width: 100%;
+        width: 100%;
+        word-break: break-word;
     }
     
     .faq-question {
@@ -2600,6 +2663,20 @@ cite {
 
 /* Responsive - Photo Upload Section */
 @media (max-width: 768px) {
+    .photo-upload {
+        overflow-x: hidden;
+    }
+    
+    .upload-wrapper {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .upload-header {
+        max-width: 100%;
+        padding: 0;
+    }
+    
     .upload-icon-large {
         width: 80px;
         height: 80px;
@@ -2612,18 +2689,44 @@ cite {
     .upload-benefits {
         grid-template-columns: 1fr;
         gap: 1rem;
+        max-width: 100%;
     }
     
     .upload-benefit-item {
         padding: 1.25rem;
+        max-width: 100%;
+        width: 100%;
     }
     
     .upload-form-card {
         padding: 2rem 1.5rem;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .upload-form {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .upload-form .form-group {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .upload-form .form-group input,
+    .upload-form .form-group button {
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
     }
     
     .file-upload-btn {
         padding: 2.5rem 1.5rem;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
     }
     
     .file-upload-btn i {
@@ -2632,6 +2735,11 @@ cite {
     
     .file-upload-btn span {
         font-size: 1rem;
+    }
+    
+    .file-upload-wrapper {
+        max-width: 100%;
+        width: 100%;
     }
 }
 
@@ -2646,6 +2754,24 @@ cite {
     }
     
     .upload-form-card {
+        padding: 1.75rem 1.25rem;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .brand-showcase {
+        padding: 2rem 1.25rem;
+    }
+    
+    .brand-logo-large {
+        padding: 1.5rem;
+    }
+    
+    .brand-full-logo {
+        max-width: 200px;
+    }
+    
+    .contact-form-wrapper {
         padding: 1.75rem 1.25rem;
     }
     
